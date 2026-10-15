@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsPulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>NewsPulse
+
+    </h1>
+    <p>Latest headlines</p>
+  </header>
+
+  <main class="container">
+
+    <div class="toolbar">
+      <div id="category-buttons" class="category-buttons">
+        <button class="category-btn active" data-category="general">General</button>
+        <button class="category-btn" data-category="business">Business</button>
+        <button class="category-btn" data-category="technology">Technology</button>
+        <button class="category-btn" data-category="sports">Sports</button>
+        <button class="category-btn" data-category="science">Science</button>
+        <button class="category-btn" data-category="health">Health</button>
+        <button class="category-btn" data-category="entertainment">Entertainment</button>
+      </div>
+            <div class="toolbar-right">
+        <select id="country-select" class="country-select">
+          <option value="ph" selected>Philippines</option>
+          <option value="us">United States</option>
+          <option value="gb">United Kingdom</option>
+          <option value="au">Australia</option>
+          <option value="sg">Singapore</option>
+        </select>
+        <button id="refresh-btn" class="refresh-btn">Refresh</button>
+      </div>
+    </div>
+
+    <p id="status-message" class="status-message"></p>
+
+    <div id="news-container" class="news-grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
