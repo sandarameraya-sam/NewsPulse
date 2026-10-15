@@ -1,5 +1,5 @@
 // The address of YOUR Flask backend
-const API_URL = "http://127.0.0.1:5000/api/news";
+const API_URL = "https://newspulse-api-s8wb.onrender.com/api/news";
 
 // Elements from index.html
 const newsContainer = document.getElementById("news-container");
